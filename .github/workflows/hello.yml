@@ -20,4 +20,3 @@ jobs:
 
       - name: Greeting
         run: echo "Brawo! nakomita robora!" >> $GITHUB_STEP_SUMMARY
-        # run: echo "Brawo! nakomita robora!" >> $GITHUB_ENV
