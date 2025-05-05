@@ -1,14 +1,16 @@
+# <project_root>/.github/workflows/hello.yml
+
 name: Hello world!
 
 on:
   workflow_dispatch:
 
 jobs:
-  add-setup:
+  app-setup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Configure node
         uses: actions/setup-node@v4
@@ -19,4 +21,4 @@ jobs:
         run: npm ci
 
       - name: Greeting
-        run: echo "Brawo! nakomita robora!" >> $GITHUB_STEP_SUMMARY
+        run: echo "Brawo! Znakomita robota!" >> $GITHUB_STEP_SUMMARY
